@@ -1,0 +1,58 @@
+[
+    {
+      "Id": "880RR",
+      "Name": "Marmot Ajax Tent",
+      "Brand": "Marmot",
+      "FinalPrice": 199.99,
+      "Description": "3-person tent with weather protection and durable rainfly",
+      "Image": "/images/880RR.jpg"
+    },
+    {
+      "Id": "985RF",
+      "Name": "Northface Alpine Tent",
+      "Brand": "Northface",
+      "FinalPrice": 249.99,
+      "Description": "4-season mountaineering tent with reinforced poles",
+      "Image": "/images/985RF.jpg"
+    },
+    {
+      "Id": "332WT",
+      "Name": "REI Co-op Half Dome",
+      "Brand": "REI",
+      "FinalPrice": 229.00,
+      "Description": "2-person backpacking tent with color-coded setup",
+      "Image": "/images/332WT.jpg"
+    },
+    {
+      "Id": "445TG",
+      "Name": "Kelty Grand Mesa",
+      "Brand": "Kelty",
+      "FinalPrice": 159.95,
+      "Description": "4-person family tent with easy pitch design",
+      "Image": "/images/445TG.jpg"
+    },
+    {
+      "Id": "678YH",
+      "Name": "Big Agnes Copper Spur",
+      "Brand": "Big Agnes",
+      "FinalPrice": 349.95,
+      "Description": "Ultralight 3-person tent with premium materials",
+      "Image": "/images/678YH.jpg"
+    },
+    {
+      "Id": "112JK",
+      "Name": "Coleman Sundome",
+      "Brand": "Coleman",
+      "FinalPrice": 89.99,
+      "Description": "6-person budget tent with weatherproof design",
+      "Image": "/images/112JK.jpg"
+    },
+    {
+      "Id": "556NM",
+      "Name": "MSR Hubba Hubba",
+      "Brand": "MSR",
+      "FinalPrice": 399.95,
+      "Description": "Award-winning 2-person backpacking tent",
+      "Image": "/images/556NM.jpg"
+    }
+  ]

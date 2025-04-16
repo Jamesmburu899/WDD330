@@ -32,6 +32,69 @@ body {
   background-color: white;
 }
 
+/* Navigation Styles */
+.site-header {
+  background-color: white;
+  padding: var(--spacing-md) 0;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+.site-logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  padding: var(--spacing-xs) 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+
 .categories {
   padding: var(--spacing-xl) 0;
   background-color: var(--color-light);

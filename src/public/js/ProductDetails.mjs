@@ -20,14 +20,14 @@ export default class ProductDetails {
   }
 
   render() {
-    const { Name, Brand, FinalPrice, Description, Image } = this.product;
+    const { Name, Brand, FinalPrice, Description, Images } = this.product;
     
     document.title = `${Name} | Sleep Outside`;
-    document.getElementById('product-image').src = Image;
+    document.getElementById('product-image').src = Images.PrimaryLarge;
     document.getElementById('product-image').alt = Name;
     document.getElementById('product-name').textContent = Name;
-    document.getElementById('product-brand').textContent = Brand;
-    document.getElementById('product-price').textContent = `$${FinalPrice.toFixed(2)}`;
+    document.getElementById('product-brand').textContent = Brand.Name;
+    document.getElementById('product-price').textContent = `$${FinalPrice}`;
     document.getElementById('product-description').textContent = Description;
   }
 

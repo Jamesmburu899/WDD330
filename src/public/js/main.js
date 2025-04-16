@@ -1,5 +1,6 @@
 import ProductData from './ProductData.mjs';
 import ProductList from './ProductList.mjs';
+import { loadHeaderFooter } from './utils.mjs';
 
 const initializeApp = async () => {
   try {
@@ -20,4 +21,7 @@ const initializeApp = async () => {
   }
 };
 
-document.addEventListener('DOMContentLoaded', initializeApp);
+document.addEventListener('DOMContentLoaded', () => {
+  loadHeaderFooter();
+  initializeApp();
+});

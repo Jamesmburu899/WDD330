@@ -38,9 +38,30 @@ export default class ProductDetails {
       if (!cart.some(item => item.Id === this.product.Id)) {
         cart.push(this.product);
         setLocalStorage('so-cart', cart);
+        
+        // Update cart button state
         cartButton.textContent = 'Added to Cart!';
+        cartButton.classList.add('added');
+        
+        // Update cart counter in header
+        const cartCount = document.querySelector('.cart-count');
+        if (cartCount) {
+          cartCount.textContent = cart.length;
+          cartCount.classList.add('animate');
+        }
+
         setTimeout(() => {
           cartButton.textContent = 'Add to Cart';
+          cartButton.classList.remove('added');
+          if (cartCount) cartCount.classList.remove('animate');
+        }, 2000);
+      } else {
+        // Product already in cart feedback
+        cartButton.textContent = 'Already in Cart';
+        cartButton.classList.add('in-cart');
+        setTimeout(() => {
+          cartButton.textContent = 'Add to Cart';
+          cartButton.classList.remove('in-cart');
         }, 2000);
       }
     });

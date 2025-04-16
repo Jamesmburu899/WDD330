@@ -74,6 +74,35 @@ body {
   color: var(--primary);
 }
 
+/* Cart Styles */
+.cart-count {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  transition: transform 0.3s;
+}
+
+.cart-count.animate {
+  transform: scale(1.2);
+}
+
+#add-to-cart {
+  transition: all 0.3s ease;
+}
+
+#add-to-cart.added {
+  background-color: var(--primary-light);
+}
+
+#add-to-cart.in-cart {
+  background-color: var(--gray);
+}
+
 /* Main Content Styles */
 .page-title {
   font-family: 'Playfair Display', serif;

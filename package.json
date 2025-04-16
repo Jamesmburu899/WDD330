@@ -1,0 +1,19 @@
+{
+  "name": "sleepoutside",
+  "version": "1.0.0",
+  "description": "Sleep Outside e-commerce website",
+  "main": "src/index.html",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vite": "^4.5.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.8.0"
+  }
+}

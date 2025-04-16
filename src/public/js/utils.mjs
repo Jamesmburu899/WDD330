@@ -4,12 +4,8 @@ export function getParam(param) {
   }
   
   export function getLocalStorage(key) {
-    try {
-      return JSON.parse(localStorage.getItem(key)) || [];
-    } catch (err) {
-      console.error('Error reading localStorage:', err);
-      return [];
-    }
+    const item = localStorage.getItem(key);
+    return item ? JSON.parse(item) : null;
   }
   
   export function setLocalStorage(key, data) {

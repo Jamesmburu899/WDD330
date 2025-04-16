@@ -8,6 +8,7 @@ This directory contains product images organized by categories:
 - `/hammocks` - Hammock product images
 
 Each category folder should contain product images in the following formats:
+
 - Primary medium images (recommended size: 800x800px)
 - Thumbnail images (recommended size: 300x300px)
 

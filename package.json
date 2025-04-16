@@ -4,7 +4,7 @@
   "description": "Sleep Outside e-commerce website",
   "main": "src/index.html",
   "scripts": {
-    "start": "node server.js",
+    "start": "npm run build && node server.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",

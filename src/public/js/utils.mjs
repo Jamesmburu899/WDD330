@@ -67,3 +67,42 @@ export function getParam(param) {
     renderWithTemplate(headerTemplate, headerElement);
     renderWithTemplate(footerTemplate, footerElement);
   }
+
+  export function alertMessage(message, scroll = true) {
+    // create element to hold the alert
+    const alert = document.createElement('div');
+    alert.classList.add('alert');
+    
+    // create the contents
+    const alertContent = document.createElement('p');
+    alertContent.textContent = message;
+    
+    // create close button
+    const closeBtn = document.createElement('span');
+    closeBtn.classList.add('close');
+    closeBtn.innerHTML = '&times;';
+    
+    // add close button and content to alert
+    alert.appendChild(alertContent);
+    alert.appendChild(closeBtn);
+    
+    // add a listener to the alert to see if they clicked on the X
+    closeBtn.addEventListener('click', function() {
+      const main = document.querySelector('main');
+      main.removeChild(alert);
+    });
+    
+    // add the alert to the top of main
+    const main = document.querySelector('main');
+    main.prepend(alert);
+    
+    // make sure they see the alert by scrolling to the top of the window
+    if(scroll) window.scrollTo(0,0);
+    
+    // automatically remove the alert after 7 seconds
+    setTimeout(() => {
+      if (alert.parentNode === main) {
+        main.removeChild(alert);
+      }
+    }, 7000);
+  }
